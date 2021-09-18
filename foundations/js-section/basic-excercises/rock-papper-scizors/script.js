@@ -2,7 +2,6 @@ const options = ["papper", "rock", "scissors"];
 
 const computerPlay = () => {
     const prob = Math.floor(Math.random() * 3);
-    console.log(options[prob]);
     return options[prob];
 }
 
@@ -30,6 +29,13 @@ const singleRound = (player, computer) => {
     }
 }
 
-computerPlay();
-singleRound("papper", "papper");
+const game = () => {
+    for (let i = 0; i < 5; i++){
+        const player = prompt("enter your guess").toLowerCase();
+        const computer = computerPlay();
+        console.log(`🤷 ${player} vs 💻 ${computer}`);
+        console.log(singleRound(player, computer));
+    }
+}
 
+game();
