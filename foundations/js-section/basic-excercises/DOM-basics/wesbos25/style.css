@@ -1,0 +1,27 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+div{
+    width: 100%;
+    padding: 100px;
+    background-color: aquamarine;
+}
+
+.one{
+    background-color: #590d22;
+}
+
+.two{
+    background-color: #c9184a;
+}
+
+.three{
+    background-color: #ff8fa3;
+}
