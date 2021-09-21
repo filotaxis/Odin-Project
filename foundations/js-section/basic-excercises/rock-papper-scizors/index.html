@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock papper scizors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>🗿Rock 📄papper ✂scizors</h1>
-    <script src="script.js"></script>
+    <h1>rock-papper-scizors (bo3)</h1>
+    
+    <div class="container">
+        <div class="game-winner">
+            <p>The winner is</p>
+            <p id="game-result"></p>
+        </div>    
+        
+        <div class="display">
+            <div class="player">
+                <div class="player-score">0</div>
+                <p>🤷</p>
+                <div class="player-selection"> </div>
+            </div>
+        
+            <div class="winner"> </div>
+
+            <div class="computer">
+                <div class="computer-score">0</div>
+                <p>💻</p>
+                <div class="computer-selection"> </div>
+            </div>
+        </div>
+        
+        <div class="options">
+            <button id="rock">✊</button>
+            <button id="papper">🤚</button>
+            <button id="scissors">🖖</button>
+        </div>
+    </div>
 </body>
 </html>

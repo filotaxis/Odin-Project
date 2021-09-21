@@ -1,0 +1,89 @@
+body {
+    background-color: #264653;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+button{
+    border: 2px solid #f4a261;
+    background-color: #264653;
+    font-size: 2rem;
+    color: #f4a261;
+    padding: 1rem 2rem;
+    margin: 2rem;
+}
+
+.container{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-winner{
+    flex: 1;
+    display: flex;
+    font-size: 2rem;
+    color: #2a9d8f;
+    border: 3px solid #e76f51;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.display {
+    flex: 2;
+    display: flex;
+    font-size: 2rem;
+    color: #2a9d8f;
+}
+
+.player {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e76f51;
+}
+
+.winner {
+    flex: 2;
+    display: flex;
+    color: #e9c46a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e9c46a;
+    /* margin: 0 2rem; */
+
+}
+
+.computer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e76f51;
+
+}
+
+.options{
+    flex: 1;    
+    display: flex;
+    justify-content: center;
+}
+
+/* .computer-score{
+    width: 100%;
+} */
+
+
