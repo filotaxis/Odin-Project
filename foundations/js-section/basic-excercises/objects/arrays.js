@@ -47,9 +47,5 @@ console.log(reduce_1);
 
 // sort
 
-
-
-
-
-
-
+const even = element => element % 2 === 0;
+console.log(nums.some(even));

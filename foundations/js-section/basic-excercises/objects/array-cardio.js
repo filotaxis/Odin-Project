@@ -68,61 +68,28 @@ const totalYearsLived = inventors.reduce((total, inventor) => {
 const sortedByLived = inventors.sort((a, b) => {
     return (a.passed - a.year) > (b.passed - b.year) ? -1 : 1;
 })
-
-console.table(sortedByLived);
+// console.table(sortedByLived);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-const boulervards = [
-        Boulevards of Paris
-    City walls of Paris
-    Thiers wall
-    Wall of Charles V
-    Wall of Philip II Augustus
-
-*
-
-    "City gates of Paris"
-    "Haussmann's renovation of Paris"
-    "Boulevards of the Marshals"
-    "Boulevard Auguste-Blanqui"
-    "Boulevard Barbès"
-    "Boulevard Beaumarchais"
-    "Boulevard de l'Amiral-Bruix"
-    "Boulevard Mortier"
-    "Boulevard Poniatowski"
-    "Boulevard Soult"
-    "Boulevard des Capucines"
-    "Boulevard de la Chapelle"
-    "Boulevard de Clichy"
-    "Boulevard du Crime"
-    "Boulevard du Général-d'Armée-Jean-Simon"
-    "Boulevard Haussmann"
-    "Boulevard de l'Hôpital"
-    "Boulevard des Italiens"
-    "Boulevard Lefebvre"
-    "Boulevard de la Madeleine"
-    "Boulevard de Magenta"
-    "Boulevard Malesherbes"
-    "Boulevard Marguerite-de-Rochechouart"
-    "Boulevard Montmartre"
-    "Boulevard du Montparnasse"
-    "Boulevard Raspail"
-    "Boulevard Richard-Lenoir"
-    "Boulevard Saint-Germain"
-    "Boulevard Saint-Michel"
-    "Boulevard de Sébastopol"
-    "Boulevard de Strasbourg"
-    "Boulevard du Temple"
-    "Boulevard Voltaire"
-    "Boulevard de la Zone"
-];
 
 
+// 7. sort Exercise
+// Sort the people alphabetically by last name
+const names = people.sort((a, b) => {
+    return a.split(",")[1] > b.split(",")[1] ? 1 : -1;
+});
+// names.filter(name => console.log(name.indexOf()))
+// console.table(names);
 
-    // 7. sort Exercise
-    // Sort the people alphabetically by last name
+// 8. Reduce Exercise
+// Sum up the instances of each of these
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
-    // 8. Reduce Exercise
-    // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+const instances = data.reduce((obj, item) => {
+    if (!obj[item]) {
+        obj[item] = 0;
+    }
+    obj[item]++;
+    return obj
+}, {});
